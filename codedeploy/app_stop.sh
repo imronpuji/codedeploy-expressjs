@@ -1,2 +1,3 @@
+#!/bin/bash
 cd /usr/cddemo
-/usr/bin/pm2/pm2 stop app.js
+sudo pm2 stop app.js
