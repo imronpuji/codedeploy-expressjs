@@ -1,2 +1,2 @@
 cd /usr/cddemo
-pm2 stop app.js
+/usr/bin/pm2/pm2 stop app.js
