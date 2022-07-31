@@ -2,4 +2,4 @@
 
 sudo mkdir /usr/cddemo
 cd /usr/cddemo
-npm install
+sudo npm install
