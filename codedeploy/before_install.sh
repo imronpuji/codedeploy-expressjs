@@ -1,15 +1,17 @@
-yum -y update
+#!/bin/bash
 
-curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
-yum -y install nodejs
+# Install node.js
+sudo apt-get install python-software-properties -y
+sudo apt-add-repository ppa:chris-lea/node.js -y
+sudo apt-get update
+sudo apt-get install nodejs -y
 
-npm install --location=global pm2
-pm2 update
+# Install nodemon
+# sudo npm install nodemon -g
 
-export app_root=/usr/cddemo
-if [ -d "$app_root" ];then
-    rm -rf /usr/cddemo
-    mkdir -p /usr/cddemo
-else
-    mkdir -p /usr/cddemo
-fi
+# Install forever module 
+# https://www.npmjs.com/package/forever
+sudo npm install forever -g
+
+# Clean working folder
+# sudo find /home/ubuntu/test -type f -delete

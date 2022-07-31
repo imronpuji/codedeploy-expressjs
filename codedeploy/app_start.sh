@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /usr/cddemo
-sudo pm2 start app.js
+forever stopall
+forever start app.js
