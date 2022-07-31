@@ -1,2 +1,2 @@
 #!/bin/bash
-pm2 stop /usr/cddemo/app.js
+/usr/bin/pm2 stop /usr/cddemo/app.js
